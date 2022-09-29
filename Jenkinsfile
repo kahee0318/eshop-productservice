@@ -55,7 +55,6 @@ spec:
             /kaniko/executor \\
             --git branch=main \\
             --context=git://$USERNAME:$GIT_TOKEN@github.com/kahee0318/eshop-productservice.git \\
-            --context-sub-path=eshop-productservice \\
             --destination=307401367625.dkr.ecr.us-east-1.amazonaws.com/eshop-productservice:latest
             '''
           }
