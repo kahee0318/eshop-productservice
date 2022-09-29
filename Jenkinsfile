@@ -63,13 +63,4 @@ spec:
       }
     }
   }  
-
-  post {
-    success { 
-      slackSend(channel: 'C040Z4P15GD', color: 'good', message: 'productservice CI success')
-    }
-    failure {
-      slackSend(channel: 'C040Z4P15GD', color: 'danger', message: 'productservice CI fail')
-    }
-  }  
 }
