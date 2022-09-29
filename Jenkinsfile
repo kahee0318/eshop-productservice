@@ -62,5 +62,13 @@ spec:
         }
       }
     }
+  }
+  post {
+    success {  
+      slackSend(channel: 'C040Z4P15GD', color: 'good', message: 'eshop-productservice CI success')
+    }
+    failure {
+      slackSend(channel: 'C040Z4P15GD', color: 'danger', message: 'eshop-productservice CI fail')
+    }
   }  
 }
